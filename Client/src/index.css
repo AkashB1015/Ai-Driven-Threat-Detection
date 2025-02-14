@@ -1,0 +1,202 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0057b8, #007bff);
+    padding: 15px 30px;
+    color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #e9edf1;
+    margin-bottom: 10px;
+   
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Profile Wrapper */
+.profile-wrapper {
+    position: relative;
+}
+
+/* Hidden Checkbox */
+#profile-toggle {
+    display: none;
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Profile Card */
+.profile-card {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+}
+
+/* Show Profile Card When Checkbox is Checked */
+#profile-toggle:checked + .profile-icon + .profile-card {
+    display: block;
+}
+
+.profile-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.profile-card a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: #057bf8;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.profile-card a:hover {
+    background: #0057b8;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    height: calc(100vh - 60px);
+    background: #121212;
+}
+
+.left-sidebar {
+    width: 250px;
+    background: #1a1a1a;
+    color: white;
+    padding-top: 20px;
+}
+
+.left-sidebar ul {
+    list-style: none;
+}
+
+.left-sidebar ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.left-sidebar ul li.active {
+    background: #007bff;
+    font-weight: bold;
+}
+
+.left-sidebar ul li:hover {
+    background: #333;
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 30px;
+    color: white;
+}
+
+.security-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.option {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option.large {
+    padding: 40px;
+}
+
+.option:hover {
+    background: #007bff;
+}
+
