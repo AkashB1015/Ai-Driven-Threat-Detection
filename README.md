@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/1259a301-d790-45c3-906f-bb0c9100f667)# Ai-Driven-Threat-Detection
- - Project Development 
+#- Project Development: 
 
 # Project Stage 1:
 
