@@ -4,7 +4,7 @@ import "./page.css";
 const Features = () => {
     return (
         <section id="features" className="features">
-           
+            <div className="container123" >
                 <h2>Key Features</h2>
                 <div className="feature-grid">
                     <div className="feature-item">
@@ -23,7 +23,7 @@ const Features = () => {
                         <p>Secure your personal data and online activities.</p>
                     </div>
                 </div>
-           
+           </div>
         </section>
     );
 };

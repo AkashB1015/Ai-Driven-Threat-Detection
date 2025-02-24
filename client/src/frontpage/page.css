@@ -6,7 +6,7 @@ body {
   display: flexbox;
   overflow-y: hidden;
 }
-container_start {
+.container_start {
   max-width: 1200px; /* Prevents layout from stretching too wide */
   margin: 0 auto;
 }
@@ -142,7 +142,12 @@ nav {
   justify-content: space-around;
   gap: 20px;
 }
-
+.container123 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex-box;
+}
 /* add this ------------------------------------------------------------- */
 .feature-item {
   background-color: #fff;
@@ -436,7 +441,12 @@ h2 {
   display: flexbox;
   overflow: hidden
 }
-
+.container1 {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
 details {
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
