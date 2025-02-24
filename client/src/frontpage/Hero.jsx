@@ -21,7 +21,8 @@ const Hero = () => {
             
                 <div className="block2-content">
                     <h1>Manage Your Password  with Syscure</h1>
-                    <p>Advanced security for your device.<br />Stay safe from viruses, malware, and online threats.</p>
+                    <p>Secure Your Passwords, Protect Your Digital Life. <br />
+                    Keep your credentials encrypted, safe, and always within reach.</p>
                 </div>
               <br />
 
