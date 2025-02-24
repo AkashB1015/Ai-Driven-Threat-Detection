@@ -17,3 +17,9 @@
 # project part 2 ( ui and function add )
 
 ![image](https://github.com/user-attachments/assets/b6896756-1295-4a7e-a0ab-7a261542ee26)
+
+
+-----------------------------------------------------------------------------------------------------
+# Project part 3 (Landing page - Front ui) 
+
+![image](https://github.com/user-attachments/assets/b2a5ac7e-9850-4341-91c5-8462cf6da03d)
