@@ -16,7 +16,7 @@
 
 # project part 2 ( ui and function add )
 
-![image](https://github.com/user-attachments/assets/b6896756-1295-4a7e-a0ab-7a261542ee26)
+![image](https://github.com/user-attachments/assets/1ededa4b-466f-476a-9571-84b6186edc61)
 
 
 -----------------------------------------------------------------------------------------------------
