@@ -1,0 +1,147 @@
+/* Contact Page Styles */ 
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #D9EAFD 50%, #78B7D0 50%);
+  padding: 100px 100px;
+  gap: 50px;
+  transform: translateY(-20px);
+  animation: slideDown 1s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.contact-left1 {
+  max-width: 550px;
+  padding-bottom: 70px;
+  padding-left: 180px;
+}
+
+.contact-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-heading {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.contact-info {
+  margin-top: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.contact-icon {
+  font-size: 26px;
+  color: #007bff;
+}
+
+.contact-label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-text {
+  margin: 3px 0;
+  color: #555;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.contact-form-container {
+  flex: 1;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(30px);
+  animation: slideUp 1s ease-out forwards;
+  text-align: left;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.contact-form-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: border-color 0.3s, background-color 0.3s;
+  background: transparent;
+  font-size: 14px;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.contact-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-button {
+  background: #007bff;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
