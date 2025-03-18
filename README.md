@@ -24,4 +24,5 @@
 
 ![image](https://github.com/user-attachments/assets/b2a5ac7e-9850-4341-91c5-8462cf6da03d)
 
-# Add the Dashboard functions or improve the code 
+# project part 3 
+Add the Dashboard functions or improve the code 
