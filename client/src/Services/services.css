@@ -1,0 +1,130 @@
+.div_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px;
+  background-color: #f3f4f6;
+  display: flexbox;
+}
+
+.text-section {
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.text-section h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: red;
+}
+
+.text-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.explore-button {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.explore-button a {
+  color: rgb(4, 116, 235);
+  font-weight: bold;
+}
+
+.explore-button:hover {
+  background-color: #e5e7eb;
+}
+
+/* iamge --------------------------------------------------------------------------- */
+
+.image-section {
+  height: 350px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.image-section:hover {
+  transform: scale(1.1);
+}
+
+/* ----------------------------------------------------------------------------------- */
+.threat-detection-container {
+  text-align: center;
+  padding: 60px;
+  background-color: #bfdbf7;
+
+}
+
+.section-title {
+  color: #2a52be;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 38px;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #121212;
+}
+
+.description {
+  color: #555;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-box {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 30px;
+  color: #2a52be;
+  margin-bottom: 12px;
+}
+
+.feature-box h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.feature-box p {
+  font-size: 0.9rem;
+  color: #666;
+}

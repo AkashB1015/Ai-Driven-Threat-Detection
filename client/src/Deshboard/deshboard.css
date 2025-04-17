@@ -1,0 +1,458 @@
+/* Start the Design */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #0057b8, #007bff);
+    padding: 5px 30px;
+    color: white;
+
+  
+   
+ 
+
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: #e9edf1;
+    padding-left: 35px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Hidden Checkbox */
+#profile-toggle {
+    display: none;
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Profile Card */
+.profile-card {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#profile-toggle:checked+label+.profile-card {
+    display: block;
+}
+
+.profile-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.profile-card a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background: #057bf8;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.profile-card a:hover {
+    background: #0057b8;
+}
+
+/* 
+.main-container {
+    display: flex;
+    height: calc(100vh - 50%);
+    background: #121212;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    background: #121212;
+    transform: scale(1);
+    transform-origin: center;
+    
+
+} */
+
+
+/* ------------------------------------------------------- */
+/* Left Sidebar */
+.left-sidebar {
+    width: 250px;
+    height: 100dvh;
+    background: #1a1a1a;
+    color: rgb(255, 255, 255);
+    padding: 18px 0;
+    overflow: hidden;
+    position: fixed;
+    border-radius: 0 5px;
+}
+
+/* Overlay to blend the image with the theme     */
+.left-sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+/* Sidebar Menu Styling */
+.left-sidebar ul {
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
+
+.left-sidebar ul li {
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+   
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+/* Hover & Active State */
+.left-sidebar ul li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    /* border-radius:0  30px 0; */
+    background: rgba(0, 0, 0, 0.3);
+    /* padding-left: 30px; */
+    
+}
+
+/* Hover Effect */
+.left-sidebar ul li:hover {
+    /* background: #735dffbd;  */
+    /* background: #007bffa3;  */
+background: #314755; 
+background: -webkit-linear-gradient(to right, #26a0da, #314755);  
+background: linear-gradient(to right, #26a0da, #314755); 
+
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Active State (Keeps the color after selection) */
+.left-sidebar ul li:focus,  
+.left-sidebar ul li:active,  
+.left-sidebar ul li.active {  
+    background: #735DFF; 
+    color: white;
+    transform: scale(1.05);
+    outline: none; 
+}
+.left-sidebar ul li.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    background: #007bff;
+    /* border-radius: 10px; */
+    /* border-radius:0  35px 0; */
+}
+.left-sidebar ul li.active .shild {
+    width: 75px;
+    height: auto;
+}
+/* Security Options */
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 250px;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.option img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Content Scroll */
+.content11 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    max-height: 100vh;
+    padding: 20px;
+    
+}
+
+/* Text Animation */
+.safe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding-left: 20px;
+    position: absolute;
+}
+
+.move_fix {
+    display: flex;
+    padding-top: 32px;
+    position: relative;
+    padding-left: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e2e2e2;
+}
+
+.specific-h1 {
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: fit-content;
+    display: flexbox;
+    animation: blinkCursor 0.8s infinite;
+    color: #cbf3f0;
+}
+
+@keyframes blinkCursor {
+    56% {
+        border-color: transparent;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+/* Add transition for smooth effect */
+.img_color img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Scale the image and adjust opacity on hover */
+.img_color:hover img {
+    transform: scale(1.3);
+    /* Slight zoom effect */
+    /* Slightly fade the image */
+}
+
+/* --------------------------------------------- */
+.quick.Scan {
+    transition: transform 0.5s ease-in-out;
+}
+
+.quick.Scan:hover {
+    transform: scale(1.1);
+}
+
+/*-------------------------logo----- */
+.shild1 {
+    height: 40px;
+    /* Adjust size as needed */
+    width: auto;
+}
+
+.syscure_add {
+    font-size: 28px;
+    /* Adjust as needed */
+    padding-left: 9px;
+    margin: 0;
+    /* Remove default margins */
+}
+
+.shild1,
+.syscure_add {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+    /* Remove spacing */
+}
+
+body {
+    overflow: hidden;
+}
+
+/*-----------------------------profile card    */
+.profile-container {
+    position: relative;
+}
+
+.profile-icon img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-card {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.profile-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.profile-card p {
+    margin: 0px 0;
+    font-size: 14px;
+}
+
+.logoutbtn {
+
+    width: 180px;
+    height: 45px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 18px;
+    text-decoration: none;
+    background-color: #007bff;
+
+}
+
+.bolt_log {
+    font-size: 17px;
+}
+
+.logimg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.logoutbtn img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logoutbtn:active img {
+    transform: translateX(10px);
+}
+
+/* ------------------------------------- */
+.dashboard-container {
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}

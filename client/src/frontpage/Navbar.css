@@ -1,0 +1,63 @@
+
+.container_start {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container_start {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flow-root;
+  }
+  
+  /* Header and top bar -----------*/
+  header {
+  
+    background: #007BFF;
+    color: #fff;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* ---------------project logo arrange---- */
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  
+  .logo {
+    align-items: center;
+    gap: 10px;
+  
+  }
+  
+  .logo-img1 {
+    width: 40px;
+    height: auto;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
