@@ -23,7 +23,7 @@
 -----------------------------------------------------------------------------------------------------
 # Login Page :
 
-# login page creat & Project logo:
+# login page using MERN stack :
 - login page creat using React and css  (front complet )
 - project logo creat and link to the file (complet).
 - login Process using Google Auth Api .
