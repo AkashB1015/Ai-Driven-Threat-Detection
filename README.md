@@ -1,39 +1,48 @@
 #- Project Development: - Ai-Driven-Threat-Detection
 
-# Project part 1 (Home page - Front ui) 
+# (Home page - Front ui) 
 
-![image](https://github.com/user-attachments/assets/c5c11bf0-47ce-4485-8d97-a7e725e68111) 
-
-
------------------------------------------------------------------------------------------------------
-
-# project part 2 ( Service Page )
-
-![image](https://github.com/user-attachments/assets/1ededa4b-466f-476a-9571-84b6186edc61)
+![image](https://github.com/user-attachments/assets/0ecbab47-7f49-4564-8ee5-503ec732ce39)
 
 
 -----------------------------------------------------------------------------------------------------
-# project part 3 ( Contact Page )
 
-![image](https://github.com/user-attachments/assets/1ededa4b-466f-476a-9571-84b6186edc61)
+#( Service Page )
+
+![image](https://github.com/user-attachments/assets/25aa65d8-9b96-4741-aa33-be245e2c078b)
+
 
 
 -----------------------------------------------------------------------------------------------------
-# Project Stage 1:
+#( Contact Page )
+
+![image](https://github.com/user-attachments/assets/92356109-0c8d-4d85-8338-77a30935e41d)
+
+
+
+-----------------------------------------------------------------------------------------------------
+# Login Page :
 
 # login page creat & Project logo:
 - login page creat using Html and css (front complet )
 - project logo creat and link to the file (complet).
-
-
 
 ![image](https://github.com/user-attachments/assets/2188230e-5fcd-4880-841d-b950bcf6638f)
 
 
 -----------------------------------------------------------------------------------------------------
 
-# project part 3 
+# Dashboard :
 Add the Dashboard functions or improve the code :
+
 ![image](https://github.com/user-attachments/assets/be72a66c-b974-4550-a5a4-a0297132d593)
+
+-----------------------------------------------------------------------------------------------------
+
+# System Scan :
+ Dashboard functions Working  :
+ 
+![image](https://github.com/user-attachments/assets/d21baded-abe0-4a91-b006-5df38cad3e69)
+
 
 
