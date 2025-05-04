@@ -24,8 +24,9 @@
 # Login Page :
 
 # login page creat & Project logo:
-- login page creat using Html and css (front complet )
+- login page creat using React and css  (front complet )
 - project logo creat and link to the file (complet).
+- login Process using Google Auth Api .
 
 ![image](https://github.com/user-attachments/assets/2188230e-5fcd-4880-841d-b950bcf6638f)
 
